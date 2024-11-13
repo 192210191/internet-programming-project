@@ -1,0 +1,16 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type= "text/xsl"  href="system.xsl"?> 
+<systemcon> 
+<com><processor>Pentium</processor> 
+<version>4</version><speed>2.4ghgz</speed> 
+<rate>2350</rate></com> 
+<com><processor>Pentium</processor> 
+<version>4</version><speed>2.4ghz</speed> 
+<rate>2770</rate></com> 
+<com><processor>Pentium</processor> 
+<version>4</version><speed>3.02ghz</speed> 
+<rate>3420</rate></com> 
+<com><processor>Pentium</processor> 
+<version>4</version><speed>3.4ghz</speed> 
+<rate>12350</rate></com> 
+</systemcon> 

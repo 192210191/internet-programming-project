@@ -1,0 +1,28 @@
+<?xml version="1.0"?> 
+<xsd:schemaxmlns:xsd="http:/www.w3.org/2001/schema"> 
+<xsd:complexType name="customers"> 
+<xsd:complexType name="customer"> 
+<xsd:sequence> 
+<xsd:simpleType name="name"> 
+<xsd:sequence> 
+<xsd:element name="firstname" type="xsd:string"/> 
+<xsd:element name="lastname" type="xsd:string"/> 
+</xsd:sequence> 
+</xsd:simpleType> 
+<xsd:element name="title"/> 
+<xsd:element name="company"/> 
+<xsd:element name="address"/> 
+<xsd:simpleType name="phone"> 
+<xsd:sequence> 
+<xsd:element name="business"/> 
+<xsd:element name="personal"/> 
+<xsd:element name="home"/> 
+</xsd:sequence> 
+</xsd:simpleType> 
+<xsd:element name="email"/> 
+<xsd:element name="account"/> 
+</xsd:sequence> 
+<xsd:attribute name="cus_id type=xsd:ID"/> 
+</xsd:complexType> 
+</xsd:complexType> 
+</xsd:schema> 

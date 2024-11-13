@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<title>A Simple Form with JavaScript Validation</title> 
+<script type="text/javascript"> 
+ function validate_form ( )  
+ { 
+    valid = true; 
+   if ( document.contact_form.contact_name.value == "" )      
+   { 
+       alert ( "Please fill in the 'Your Name' box." ); 
+       valid = false;        
+    } 
+   if ( document.contact_form.contact_name.value != "" )     
+   { 
+      alert ( "Succesfull" ); 
+      valid = false;       
+   } 
+return valid;           
+} 
+</script> 
+</head> 
+<body bgcolor="#FFFF56"> 
+<form name="contact_form" method="post" onSubmit="return  validate_form();"> 
+<h1>Please Enter Your Name</h1> 
+<p>Your Name: <input type="text" name="contact_name"></p> 
+<p><input type="submit" name="send" value="Send Details"></p> 
+</form>      
+</body>      
+</html> 

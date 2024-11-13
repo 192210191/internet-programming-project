@@ -1,0 +1,37 @@
+<?xml version="1.0"?> 
+<xs:customers xmlns:xs="http://www.w3.org/2001/schema_instance"> 
+<xs:schema location="soft.xsd"> 
+<xs:customercus_id="1001"> 
+<xs:name> 
+<xs:firstname>Ganesh</xs:firstname> 
+<xs:lastname>Kumar</xs:lastname> 
+</xs:name> 
+<xs:title>Software Programmer</xs:title> 
+<xs:company>Microsoft</xs:company> 
+<xs:address>USA</xs:address> 
+<xs:phone> 
+<xs:business>345678</xs:business> 
+<xs:personal>6545315246</xs:personal> 
+<xs:home>4564564</xs:home> 
+</xs:phone> 
+<xs:email>gan_kuamar@yahoo.in</xs:email> 
+<xs:account>132</xs:account> 
+</xs:customer> 
+<xs:customercus_id="1002"> 
+<xs:name> 
+<xs:firstname>Senthil</xs:firstname> 
+<xs:lastname>Ramkumar</xs:lastname> 
+</xs:name> 
+<xs:title>Control Designer</xs:title> 
+<xs:company>IBM</xs:company> 
+<xs:address>India,Banglore</xs:address> 
+<xs:phone> 
+<xs:business>855654</xs:business> 
+<xs:personal>654556</xs:personal> 
+<xs:home>6546511</xs:home> 
+</xs:phone> 
+<xs:email>sen_ram@yahoo.in</xs:email> 
+<xs:account>132</xs:account> 
+</xs:customer> 
+</xs:schema> 
+</xs:customers> 
