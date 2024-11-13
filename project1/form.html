@@ -1,0 +1,112 @@
+  <html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            border:9px double black;
+            text-align: center;
+        }
+        input[type="text"], input[type="email"],input[type="date"], textarea, select {
+display: inline-block;
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin: 10 10px 10px 0;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 100px;
+            padding: 8px;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Registration Form</h1>
+
+    <form action="form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter full name:" required>
+
+        <label for="father_name">Father's Name:</label>
+        <input type="text" id="father_name" name="father_name" required>
+
+        <label for="mother_name">Mother's Name:</label>
+        <input type="text" id="mother_name" name="mother_name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter phone number" size="" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">Male
+        <input type="radio" id="female" name="gender" value="female">Female
+        <input type="radio" id="other" name="gender" value="other">Other
+        <br><br>
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Street, House, Road" rows="3" required></textarea>
+
+        <label for="blood_group">Blood Group:</label>
+        <select id="blood_group" name="blood_group" required>
+            <option value="" disabled selected>Select blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+
+        <label for="department">Department:</label><br>
+        <input type="radio" id="cse" name="department" value="CSE">
+        <label for="cse">CSE</label>
+        <input type="radio" id="eee" name="department" value="EEE">
+        <label for="eee">EEE</label>
+        <input type="radio" id="bba" name="department" value="BBA">
+        <label for="bba">BBA</label><br><br>
+
+        <label for="course">Course:</label><br>
+        <input type="checkbox" id="c" name="course" value="C">
+        <label for="c">C</label>
+        <input type="checkbox" id="cpp" name="course" value="C++">
+        <label for="cpp">C++</label>
+        <input type="checkbox" id="java" name="course" value="Java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="ai" name="course" value="AI">
+        <label for="ai">AI</label>
+        <input type="checkbox" id="ml" name="course" value="Machine Learning">
+        <label for="ml">Machine Learning</label>
+        <input type="checkbox" id="robotics" name="course" value="Robotics">
+        <label for="robotics">Robotics</label><br><br>
+
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+</body>
+</html>

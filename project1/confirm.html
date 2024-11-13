@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmation Email</title>
+</head>
+<body>
+    <form id="emailForm">
+        <input type="email" id="userEmail" placeholder="Enter Your Email" required>
+        <button type="submit">Send Confirmation Email</button>
+    </form>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const userEmail = document.getElementById('userEmail').value;
+
+            const response = await fetch('/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ userEmail })
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        });
+    </script>
+</body>
+</html>
